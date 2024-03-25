@@ -18,7 +18,7 @@ const items = [
     getItem('Gas Vehicles', 'g1', null, [getItem('2-4 Passengers', '1'), getItem('4+ Passengers', '2')], 'group'),
     getItem('Electric Vehicles', 'g2', null, [getItem('2-4 Passengers', '3'), getItem('4+ Passengers', '4')], 'group'),
   ]),
-  getItem('Standard SUV', 'sub2', <AppstoreOutlined />, [
+  getItem('New Arrivals', 'sub2', <AppstoreOutlined />, [
     getItem('Top Rated', '5'),
     getItem('View All', '6'),
   ]),
@@ -28,9 +28,23 @@ const items = [
   getItem('Minivan', 'sub4', <SettingOutlined />, [
     getItem('Top Rated', '9'),
     getItem('View All', '10'),
-
   ]),
-  getItem('Group', 'grp', null, [getItem('Option 13', '13'), getItem('Option 14', '14')], 'group'),
+  getItem('Pickup Trucks', 'sub4', <SettingOutlined />, [
+    getItem('Top Rated', '9'),
+    getItem('View All', '10'),
+  ]),
+  getItem('Compact Car', 'sub4', <SettingOutlined />, [
+    getItem('Top Rated', '9'),
+    getItem('View All', '10'),
+  ]),
+  getItem('Luxury Car', 'sub4', <SettingOutlined />, [
+    getItem('Top Rated', '9'),
+    getItem('View All', '10'),
+  ]),
+  getItem('Standard SUV', 'sub4', <SettingOutlined />, [
+    getItem('Top Rated', '9'),
+    getItem('View All', '10'),
+  ]),
 ];
 
 const App = () => {
