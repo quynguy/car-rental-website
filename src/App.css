@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ant-menu-submenu-popup {
+    background-color: #183e85; 
+  }
+  
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,10 +1,22 @@
 import React from 'react'
 
+import Header from './components/Header'
+import HeaderNav from './components/HeaderNav'
+import Carousel from './components/Carousel'
+import SideNav from './components/SideNav'
+
 
 function App() {
 
   return (
-    <div> Hello World </div>
+    <>
+
+    <Header />
+    <HeaderNav />
+    <Carousel />
+    <SideNav />
+
+    </>
   )
 }
 
