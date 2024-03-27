@@ -5,6 +5,8 @@ import HeaderNav from './components/HeaderNav'
 import Carousel from './components/Carousel'
 import MainContainer from './components/MainContainer'
 
+import CarsList from './components/CarsList'
+
 import '/src/App.css'
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
     <Header />
     <HeaderNav />
     <Carousel />
-    <MainContainer />
-    
+    <MainContainer>
+      <CarsList />
+    </MainContainer>
+
     </div>
  
 

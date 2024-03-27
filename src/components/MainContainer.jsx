@@ -5,6 +5,7 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 import { Menu } from 'antd';
 import { Card} from 'antd';
 
+import CarsList from './CarsList';
 
 function getItem(label, key, icon, children, type) {
     return {
@@ -29,36 +30,39 @@ function getItem(label, key, icon, children, type) {
       type: 'divider',
     },
     getItem('Minivan', 'sub3', <SettingOutlined />, [
-      getItem('Top Rated', '9'),
-      getItem('View All', '10'),
+      getItem('Top Rated', '7'),
+      getItem('View All', '8'),
     ]),
     getItem('Pickup Trucks', 'sub4', <SettingOutlined />, [
-      getItem('Top Rated', '9'),
-      getItem('View All', '10'),
+      getItem('Top Rated', '11'),
+      getItem('View All', '12'),
     ]),
     getItem('Compact Car', 'sub5', <SettingOutlined />, [
-      getItem('Top Rated', '9'),
-      getItem('View All', '10'),
+      getItem('Top Rated', '13'),
+      getItem('View All', '14'),
     ]),
     getItem('Luxury Car', 'sub6', <SettingOutlined />, [
-      getItem('Top Rated', '9'),
-      getItem('View All', '10'),
+      getItem('Top Rated', '15'),
+      getItem('View All', '16'),
     ]),
     getItem('Standard SUV', 'sub7', <SettingOutlined />, [
-      getItem('Top Rated', '9'),
-      getItem('View All', '10'),
+      getItem('Top Rated', '17'),
+      getItem('View All', '18'),
     ]),
   ];
 
 
-const MainContainer = () => {
+
+
+const MainContainer = ({ cars }) => {
+    console.log(cars);
     const onClick = (e) => {
         console.log('click ', e);
       };
   return (
 
-    <div class="main-container">
-        <div class="left-maincontainer">
+    <div className="main-container">
+        <div className="left-maincontainer">
         
         <Menu
             onClick={onClick}
@@ -72,31 +76,11 @@ const MainContainer = () => {
          />
 
         </div>
-        <div class="right-maincontainer">
-            <div style={{ display: 'flex'}}>
-            <Card title="Card title" bordered={false} style={{ width: 250 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-            </Card>
-            <Card title="Card title" bordered={false} style={{ width: 250 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-            </Card>
-            <Card title="Card title" bordered={false} style={{ width: 250 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-            </Card>
-            <Card title="Card title" bordered={false} style={{ width: 250 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-            </Card>
 
-            </div>
+        <div className="right-maincontainer">
+          <CarsList />
         </div>
+
     </div>
 
   )
